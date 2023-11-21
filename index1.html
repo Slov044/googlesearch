@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Search</title>
+
+  <style> /* стили / css*/
+    h1 {
+      text-align: center; /* Вирівнюємо текст заголовка по центру */
+    }
+    div {
+      display: flex;
+      justify-content: center;
+    }    
+
+
+
+  </style>
+</head>
+<body>
+
+   <h1>Google Search</h1> <!-- титульное название страницы -->
+
+<div>
+  <button onclick="redirectTost1()">Перейти на пошук</button>  <!-- все 3 button являются кнопками -->
+  <button onclick="redirectTost2()">Перейти на пошук зображень</button>
+  <button onclick="redirectTost3()">Перейти на розширений пошук</button>
+</div>
+
+  <script> // скрипт для редиректа на страницы
+    function  redirectTost1() {         
+      window.location.href = 'st1.html';
+    }
+
+    function  redirectTost2() {
+      window.location.href = 'st2.html';
+    }
+
+    function  redirectTost3() {
+      window.location.href = 'st3.html';
+    }
+  </script>
+
+</body>
+</html>

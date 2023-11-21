@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Розширений пошук</title>
+
+		<style>
+
+	button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+
+    input {
+    	border-radius: 10px;
+    }
+
+        .buttoncl {
+    	position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .ps1 {
+    	position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, +60%);
+    }
+
+	</style>
+
+</head>
+<body>
+
+    <form action="https://www.google.com/advanced_search" method="get" target="_blank"> <!-- отправляет запрос на поиск, открывается в новой кладке -->
+      <input class="buttoncl" type="text" name="q" placeholder="Розширений пошук"> <!-- ввод запроса -->
+      <input class="ps1" type="submit" value="Розширений пошук"> <!-- кнопка для запроса -->
+    </form>
+
+
+     <button onclick="redirectTost1()">Перейти на звичайний пошук</button>
+
+  <script> // скрипт для редиректа на страницы
+    function  redirectTost1() {
+      window.location.href = 'st1.html';
+    }
+    </script>
+
+</body>
+</html>
